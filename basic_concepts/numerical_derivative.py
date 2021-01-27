@@ -1,8 +1,7 @@
-from math import e 
 import numpy as np 
 
 def numerical_derivative(f, x):
-    delta_x = 1 * e - 4
+    delta_x = 1e-4
     grad = np.zeros_like(x)
 
     it = np.nditer(x, flags = ['multi_index'], op_flags = ['readwrite'])
